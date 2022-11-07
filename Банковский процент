@@ -7,10 +7,10 @@ d_skb = float(per_cent['СКБ'])
 d_vtb = float(per_cent['ВТБ'])
 d_sbr = float(per_cent['СБЕР'])
 
-rub_tkb = (moneyd_tkb)/100
-rub_skb = (moneyd_skb)/100
-rub_vtb = (moneyd_vtb)/100
-rub_sbr = (moneyd_sbr)/100
+rub_tkb = (money*d_tkb)/100
+rub_skb = (money*d_skb)/100
+rub_vtb = (money*d_vtb)/100
+rub_sbr = (money*d_sbr)/100
 print('Итоговые проценты по вкладу в рублях за год:', 'ТКБ=',rub_tkb,'|| СКБ=',rub_skb,'|| ВТБ=',rub_vtb,'|| СБЕР=',rub_sbr)
 max_profit = [rub_skb,rub_sbr,rub_vtb,rub_tkb]
 max_profit.sort()
