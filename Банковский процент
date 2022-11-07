@@ -1,0 +1,17 @@
+per_cent = {'ТКБ': 5.6, 'СКБ': 5.9, 'ВТБ': 4.28, 'СБЕР': 4.0}
+print('Банки и проценты которые предлагают вкладчику на год:')
+print(per_cent)
+money = int(input("Введите сумму предполагаемого вклада в рублях="))
+d_tkb = float(per_cent['ТКБ'])
+d_skb = float(per_cent['СКБ'])
+d_vtb = float(per_cent['ВТБ'])
+d_sbr = float(per_cent['СБЕР'])
+
+rub_tkb = (moneyd_tkb)/100
+rub_skb = (moneyd_skb)/100
+rub_vtb = (moneyd_vtb)/100
+rub_sbr = (moneyd_sbr)/100
+print('Итоговые проценты по вкладу в рублях за год:', 'ТКБ=',rub_tkb,'|| СКБ=',rub_skb,'|| ВТБ=',rub_vtb,'|| СБЕР=',rub_sbr)
+max_profit = [rub_skb,rub_sbr,rub_vtb,rub_tkb]
+max_profit.sort()
+print('Максимальная сумма, которую вы можете заработать =', max_profit[-1])
